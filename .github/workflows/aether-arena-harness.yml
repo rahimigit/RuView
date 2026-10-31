@@ -9,15 +9,7 @@ name: AetherArena harness gate (ADR-149)
 # This is the "a PR that runs the harness as part of the build process" requirement.
 
 on:
-  pull_request:
-    paths:
-      - 'v2/crates/wifi-densepose-train/src/ruview_metrics.rs'
-      - 'v2/crates/wifi-densepose-train/src/ablation.rs'
-      - 'v2/crates/wifi-densepose-train/src/bin/aa_score_runner.rs'
-      - 'aether-arena/**'
-      - '.github/workflows/aether-arena-harness.yml'
-  push:
-    branches: ['feat/adr-149-aether-arena']
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
 
 permissions:

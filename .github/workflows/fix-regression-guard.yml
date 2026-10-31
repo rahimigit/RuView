@@ -9,11 +9,7 @@ name: Fix-Marker Regression Guard
 # known fix?" gate — the CI analogue of the ruflo witness fix-marker system.
 
 on:
-  push:
-    branches:
-      - main
-      - master
-  pull_request:
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
 
 jobs:

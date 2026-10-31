@@ -1,14 +1,7 @@
 name: Continuous Deployment
 
 on:
-  push:
-    branches: [ main ]
-    tags: [ 'v*' ]
-  workflow_run:
-    workflows: ["Continuous Integration"]
-    types:
-      - completed
-    branches: [ main ]
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
     inputs:
       environment:

@@ -9,19 +9,8 @@
 name: npm packages
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'harness/ruview/**'
-      - 'tools/ruview-mcp/**'
-      - 'tools/ruview-cli/**'
-      - '.github/workflows/npm-packages.yml'
-  pull_request:
-    paths:
-      - 'harness/ruview/**'
-      - 'tools/ruview-mcp/**'
-      - 'tools/ruview-cli/**'
-      - '.github/workflows/npm-packages.yml'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 permissions:
   contents: read

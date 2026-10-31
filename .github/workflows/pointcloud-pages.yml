@@ -9,11 +9,7 @@ name: Point Cloud Viewer → GitHub Pages
 # nvsim/, and root index.html demos already on gh-pages.
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'v2/crates/wifi-densepose-pointcloud/src/viewer.html'
-      - '.github/workflows/pointcloud-pages.yml'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
 
 permissions:

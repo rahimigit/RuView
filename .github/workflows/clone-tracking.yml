@@ -16,11 +16,7 @@ name: GitHub Clone Tracking → data/clone-data.rvf
 # practice). Workflow can also be dispatched manually for backfill or test.
 
 on:
-  schedule:
-    # 01:23 UTC on the 1st and 15th of every month — close to 14-day cadence
-    # without cron's "every 14 days" monthly-reset weirdness. Picking :23
-    # avoids the cron herd on :00.
-    - cron: '23 1 1,15 * *'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
 
 permissions:

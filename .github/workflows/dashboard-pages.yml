@@ -5,12 +5,7 @@ name: nvsim Dashboard → GitHub Pages
 # already published from gh-pages. ADR-092 §9.
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'v2/crates/nvsim/**'
-      - 'dashboard/**'
-      - '.github/workflows/dashboard-pages.yml'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
 
 permissions:

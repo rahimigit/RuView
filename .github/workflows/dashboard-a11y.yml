@@ -5,11 +5,7 @@ name: Dashboard a11y + cross-browser
 # and §11.8 (cross-browser).
 
 on:
-  push:
-    branches: [main]
-    paths: ['dashboard/**', 'v2/crates/nvsim/**']
-  pull_request:
-    paths: ['dashboard/**']
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
 
 permissions:

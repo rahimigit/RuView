@@ -25,6 +25,7 @@
 name: pip-release
 
 on:
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
     inputs:
       target:
@@ -42,9 +43,6 @@ on:
         options:
           - testpypi  # dry-run target
           - pypi      # production
-  push:
-    tags:
-      - "v*-pip"
 
 permissions:
   contents: read

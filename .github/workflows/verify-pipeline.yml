@@ -1,22 +1,7 @@
 name: Verify Pipeline Determinism
 
 on:
-  push:
-    branches: [ main, master, 'claude/**' ]
-    paths:
-      - 'archive/v1/src/core/**'
-      - 'archive/v1/src/hardware/**'
-      - 'archive/v1/data/proof/**'
-      - 'archive/v1/requirements-lock.txt'
-      - '.github/workflows/verify-pipeline.yml'
-  pull_request:
-    branches: [ main, master ]
-    paths:
-      - 'archive/v1/src/core/**'
-      - 'archive/v1/src/hardware/**'
-      - 'archive/v1/data/proof/**'
-      - 'archive/v1/requirements-lock.txt'
-      - '.github/workflows/verify-pipeline.yml'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
 
 jobs:

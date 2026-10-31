@@ -17,22 +17,7 @@ name: wifi-densepose sensing-server → Docker Hub + ghcr.io
 # (ghcr.io uses the workflow's GITHUB_TOKEN — no secret needed.)
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'docker/Dockerfile.rust'
-      - 'docker/docker-entrypoint.sh'
-      - 'v2/crates/wifi-densepose-sensing-server/**'
-      - 'v2/crates/wifi-densepose-signal/**'
-      - 'v2/crates/wifi-densepose-vitals/**'
-      - 'v2/crates/wifi-densepose-wifiscan/**'
-      - 'v2/crates/wifi-densepose-bfld/**'
-      - 'v2/crates/cog-ha-matter/**'
-      - 'v2/Cargo.toml'
-      - 'v2/Cargo.lock'
-      - 'ui/**'
-      - '.github/workflows/sensing-server-docker.yml'
-    tags: ['v*']
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch: {}
 
 permissions:

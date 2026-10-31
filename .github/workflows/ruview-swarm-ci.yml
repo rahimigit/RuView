@@ -11,15 +11,7 @@ name: ruview-swarm CI guard
 # Path-scoped so it only runs when the crate or this workflow changes.
 
 on:
-  push:
-    branches: [ main, 'feat/*' ]
-    paths:
-      - 'v2/crates/ruview-swarm/**'
-      - '.github/workflows/ruview-swarm-ci.yml'
-  pull_request:
-    paths:
-      - 'v2/crates/ruview-swarm/**'
-      - '.github/workflows/ruview-swarm-ci.yml'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
 
 env:

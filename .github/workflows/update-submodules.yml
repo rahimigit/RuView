@@ -1,8 +1,7 @@
 name: Update vendor submodules
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'  # Every 6 hours
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:        # Manual trigger
 
 permissions:

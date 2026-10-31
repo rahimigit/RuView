@@ -33,23 +33,7 @@ name: Bench Regression Guard
 #   compile-verify + informational-run is the honest gate.
 
 on:
-  push:
-    branches: [ main, develop, 'feat/*' ]
-    paths:
-      - 'v2/crates/**/benches/**'
-      - 'v2/crates/**/Cargo.toml'
-      - 'v2/crates/**/src/**'
-      - 'v2/Cargo.toml'
-      - 'v2/Cargo.lock'
-      - '.github/workflows/bench-regression.yml'
-  pull_request:
-    paths:
-      - 'v2/crates/**/benches/**'
-      - 'v2/crates/**/Cargo.toml'
-      - 'v2/crates/**/src/**'
-      - 'v2/Cargo.toml'
-      - 'v2/Cargo.lock'
-      - '.github/workflows/bench-regression.yml'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
 
 permissions:

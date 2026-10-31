@@ -1,19 +1,8 @@
 name: Firmware CI
 
 on:
-  push:
-    branches:
-      - '**'
-    tags:
-      # ESP32 firmware release tags — build + version-consistency guard (RuView#505).
-      - 'v*-esp32'
-    paths:
-      - 'firmware/**'
-      - '.github/workflows/firmware-ci.yml'
-  pull_request:
-    paths:
-      - 'firmware/**'
-      - '.github/workflows/firmware-ci.yml'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 jobs:
   version-guard:
